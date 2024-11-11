@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Tablet-Buttons</title>
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Positioniert die Buttons oben */
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            gap: 132px; /* Abstand zwischen den Buttons (ca. 3,5 cm) */
+            margin-top: 56px; /* Abstand von 1,5 cm vom oberen Rand */
+        }
+        .button {
+            width: 50px; /* Breite für ca. 2 cm Durchmesser, anpassen falls nötig */
+            height: 50px; /* Höhe für ca. 2 cm Durchmesser */
+            border-radius: 50%; /* Runde Buttons */
+            background-color: #000000;
+            color: #FFFFFF;
+            font-size: 24px; /* Größere Schrift */
+            font-weight: bold; /* Fett */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            -webkit-tap-highlight-color: transparent; /* Entfernt Tap-Hervorhebung */
+            touch-action: manipulation;
+            user-select: none; /* Verhindert das Markieren des Textes */
+            -webkit-user-select: none;
+        }
+        .button:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">1</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">2</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">3</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">4</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">5</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">6</button>
+        <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">7</button>
+    </div>
+</body>
+</html>
