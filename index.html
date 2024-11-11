@@ -8,8 +8,9 @@
         body {
             background-color: #000000;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Positioniert die Buttons oben */
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             height: 100vh;
             margin: 0;
             padding: 0;
@@ -43,6 +44,9 @@
         .button:active {
             background-color: red;
         }
+        .logo {
+            margin: 50px 0; /* Abstand zu den Buttons */
+        }
         .footer-text {
             position: absolute;
             bottom: 10px;
@@ -54,6 +58,7 @@
     </style>
 </head>
 <body>
+    <img src="https://raw.githubusercontent.com/RAFI-Frank-Fleischer/Digital-Buttons-Tablet/main/RAFI_Logo_A4_weiss.png" alt="Logo" class="logo" width="200">
     <div class="container">
         <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">1</button>
         <button class="button" ontouchstart="this.style.backgroundColor = 'red'" ontouchend="this.style.backgroundColor = '#000000'">2</button>
